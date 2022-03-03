@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+html, body{
+    height: 100%;
+}
+body{
+    font-family: sans-serif;
+    background-color: rgb(114, 172, 211);
+}
+.container{
+    width: 1100px;
+    margin: 0 auto;
+}
+.messenger{
+    margin: 100px 0;
+}
+.messenger__message{
+    display: flex;
+    align-items: center;
+}
+
+.messenger__friend .messenger__user-info{
+    flex-basis: 13%;
+    display: flex;
+    align-items: center;
+}
+.messenger__owner .messenger__user-info{
+    flex-basis: 25%;
+    display: flex;
+    align-items: center;
+}
+
+.messenger__user-name{
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+.messenger__friend .messenger__user-date{
+    color: rgb(202, 58, 58);
+    font-size: 12px;
+    display: flex;
+    justify-content: flex-end;
+}
+.messenger__owner .messenger__user-date{
+    color: rgb(202, 58, 58);
+    font-size: 12px;
+    display: flex;
+    justify-content: flex-start;
+    flex-basis: auto;
+}
+
+.messenger__friend .messenger__empty-col{
+    flex-basis: 25%;
+    flex-shrink: 0;
+}
+.messenger__owner .messenger__empty-col{
+    flex-basis: 13%;
+    flex-shrink: 0;
+}
+
+.messenger__friend .messenger__message-field{
+    background-color: pink;
+    padding: 25px;
+    margin-bottom: 10px;
+    border-radius: 20px 20px 20px 2px;
+    justify-content: center;
+    flex-basis: 500px;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+.messenger__owner .messenger__message-field{
+    background-color: lightblue;
+    padding: 25px;
+    margin-bottom: 10px;
+    border-radius: 20px 20px 2px 20px;
+    flex-basis: 500px;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
